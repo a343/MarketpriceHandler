@@ -29,8 +29,11 @@ Use Java to write classes that implement a subscriber to process the feed and st
 Some examples of tasks could be:
 
 •	A subscriber to listen to the market prices. You can assume the feed is coming from a messaging system where all you have to do is implement an interface, e.g. void onMessage(String message).
-•	Each message is a CSV string (see above format).
-•	With an incoming price, process each with a margin (add commission) function, assume it is simply  -0.1% on bid, +0.1% on ask (subtract from bid, add to ask). 
-•	Publish the adjusted price to REST endpoint (just show where the endpoint will be, do not need to implement a webserver).
-•	Write a suitable test that gets the latest price, i.e. a client that gets, then prints out to console.
 
+•	Each message is a CSV string (see above format).
+
+•	With an incoming price, process each with a margin (add commission) function, assume it is simply  -0.1% on bid, +0.1% on ask (subtract from bid, add to ask). 
+
+•	Publish the adjusted price to REST endpoint (just show where the endpoint will be, do not need to implement a webserver).
+
+•	Write a suitable test that gets the latest price, i.e. a client that gets, then prints out to console.
